@@ -127,13 +127,16 @@ function execute(item) {
 
         let formHTML='';
 
-        forms.forEach(form =>{
+        if(item!=='item-4'){
+            forms.forEach(form =>{
             formHTML+=`<div class="form" onclick="window.open('${form.link}', '_blank')">
                     <h3>${form.name}</h3>
                 </div>`
-        });
-
-        (item==='item-4')?formContainer.innerHTML = '':formContainer.innerHTML = formHTML;
+            });
+        }
+        
+        
+        (item==="item-4")?formContainer.innerHTML = '':formContainer.innerHTML = formHTML;
 }
 
 
@@ -182,6 +185,7 @@ items.forEach(item => {
 
     })
 })
+
 
 
 
