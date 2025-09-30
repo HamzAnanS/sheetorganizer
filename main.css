@@ -108,7 +108,7 @@ h3 {
     background-color: #d76800;
     width: 15%;
     aspect-ratio: 1/1;
-    border-radius: 10%;
+    border-radius: 5%;
     padding: 20px;
     cursor: pointer;
 
@@ -130,4 +130,5 @@ h3 {
 
 .welcome h1 {
     font-size: 2rem;
+
 }
